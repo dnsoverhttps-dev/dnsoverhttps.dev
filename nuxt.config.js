@@ -39,7 +39,41 @@ module.exports = {
     }
   },
   modules: [
-    ['nuxt-buefy']
-  ]
+    ['@nuxtjs/google-adsense'],
+    ['@nuxtjs/google-analytics'],
+    ['@nuxtjs/sitemap'],
+    ['nuxt-buefy'],
+    'nuxt-rfg-icon',
+    /* ['nuxt-i18n', {
+      locales: [
+        {
+          code: 'ko',
+          iso: 'ko-KR',
+          file: 'ko.js'
+        }, {
+          code: 'en',
+          iso: 'en-US',
+          file: 'en.js'
+        }],
+      defaultLocale: 'ko',
+      lazy: true,
+      langDir: 'locales/',
+      detectBrowserLanguage: {
+        useCookie: true
+      }
+    }] */
+  ],
+  /* 'google-adsense': {
+    id: 'ca-pub-2810659463174293',
+    pageLevelAds: false,
+    analyticsUacct: 'UA-61070671-10',
+    analyticsDomainName: 'moribot.mori.space'
+  },
+  'google-analytics': {
+    id: 'UA-61070671-10'
+  } */
+  sitemap: {
+    path: '/sitemap.xml'
+  },
 }
 
