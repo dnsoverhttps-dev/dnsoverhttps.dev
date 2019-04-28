@@ -21,12 +21,19 @@
       .navbar-end
         a.navbar-item(href="#first")
           p test1
-        a.navbar-item(href="#second")
-          p test2
+        a.navbar-item(href="#server")
+          p server
+        a.navbar-item(href="#donation")
+          p donation
 </template>
 
 <style lang="scss">
-
+  @media screen and (min-width: 1088px) {
+    .navbar-end {
+      margin-right: 0.4em;
+    }
+  }
+  
 </style>
 
 <script>
