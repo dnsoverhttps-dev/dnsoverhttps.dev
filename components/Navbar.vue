@@ -19,9 +19,9 @@
       :class="{ 'is-active': display }"
     )
       .navbar-end
-        a.navbar-item
+        a.navbar-item(href="#first")
           p test1
-        a.navbar-item
+        a.navbar-item(href="#second")
           p test2
 </template>
 
