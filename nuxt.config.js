@@ -39,8 +39,8 @@ module.exports = {
     }
   },
   modules: [
-    ['@nuxtjs/google-adsense'],
-    ['@nuxtjs/google-analytics'],
+    // ['@nuxtjs/google-adsense'],
+    // ['@nuxtjs/google-analytics'],
     ['@nuxtjs/sitemap'],
     ['nuxt-buefy'],
     'nuxt-rfg-icon',
