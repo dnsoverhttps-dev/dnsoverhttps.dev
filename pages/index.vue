@@ -4,6 +4,10 @@
     .container(
       style="margin-top: 2em; margin-bottom: 2em;"
     )
+      .ad
+        <!-- dnsoverhttps-banner -->
+        adsbygoogle(ad-slot="1478756253")
+        p google AD
       section.section.box#first
         .content
           h1 It's still under construction!
@@ -24,6 +28,10 @@
             href="https://www.patreon.com/dnsoverhttps"
             target="_blank"
           ) BECOME A PATRON
+      .ad
+        <!-- dnsoverhttps-banner -->
+        adsbygoogle(ad-slot="1478756253")
+        p google AD
     Footer
 </template>
 
@@ -59,5 +67,21 @@ export default {
       color: #ffffff !important;
       border-color: #a0a0a0 !important;
     }
+  }
+
+  .ad {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    width: 100%;
+    min-height: 60px;
+    position: relative;
+  }
+  .ad p {
+      font-size: 0.8em;
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 4em;
   }
 </style>
