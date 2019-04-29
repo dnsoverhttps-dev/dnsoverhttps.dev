@@ -1,8 +1,33 @@
-<template>
-  <div>
-    <nuxt/>
-  </div>
+<template lang="pug">
+  div(style="background-color: #C1E7E3;")
+    Navbar
+    .container(
+      style="margin-top: 2em; margin-bottom: 2em;"
+    )
+      .ad
+        <!-- dnsoverhttps-banner -->
+        adsbygoogle(ad-slot="1478756253")
+        p google AD
+      nuxt
+      .ad
+          <!-- dnsoverhttps-banner -->
+          adsbygoogle(ad-slot="1478756253")
+          p google AD
+    Footer
 </template>
+
+<script>
+import Navbar from '~/components/Navbar.vue'
+import Footer from '~/components/Footer.vue'
+
+export default {
+  components: {
+    Navbar,
+    Footer
+  }
+}
+</script>
+
 
 <style lang="scss">
   // Import Bulma's core

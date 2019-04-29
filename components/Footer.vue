@@ -2,7 +2,7 @@
   footer.footer
     .content.has-text-centered
       p
-        | copyright 2019. 
+        | Copyright 2019. 
         a(
           href="https://github.com/small-sunshines"
           target="_blank"

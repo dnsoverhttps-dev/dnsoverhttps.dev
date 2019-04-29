@@ -20,11 +20,11 @@
     )
       .navbar-end
         a.navbar-item(href="#first")
-          p test1
+          p {{ this.$t('navbar.first') }}
         a.navbar-item(href="#server")
-          p server
+          p {{ this.$t('navbar.server') }}
         a.navbar-item(href="#donation")
-          p donation
+          p {{ this.$t('navbar.donation') }}
 </template>
 
 <style lang="scss">

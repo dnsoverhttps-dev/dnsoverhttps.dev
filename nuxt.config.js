@@ -41,10 +41,9 @@ module.exports = {
   modules: [
     ['@nuxtjs/google-adsense'],
     ['@nuxtjs/google-analytics'],
-    ['@nuxtjs/sitemap'],
     ['nuxt-buefy'],
     'nuxt-rfg-icon',
-    /* ['nuxt-i18n', {
+    ['nuxt-i18n', {
       locales: [
         {
           code: 'ko',
@@ -61,7 +60,7 @@ module.exports = {
       detectBrowserLanguage: {
         useCookie: true
       }
-    }] */
+    }]
   ],
   'google-adsense': {
     id: 'ca-pub-2810659463174293',
@@ -75,5 +74,11 @@ module.exports = {
   sitemap: {
     path: '/sitemap.xml'
   },
+  generate: {
+    routes: [
+      '/en',
+      '/ko'
+    ]
+  }
 }
 
