@@ -19,8 +19,10 @@
       :class="{ 'is-active': display }"
     )
       .navbar-end
-        a.navbar-item(href="#first")
-          p {{ this.$t('navbar.first') }}
+        a.navbar-item(href="#whatis")
+          p {{ this.$t('navbar.whatis') }}
+        a.navbar-item(href="#clients")
+          p {{ this.$t('navbar.clients') }}
         a.navbar-item(href="#server")
           p {{ this.$t('navbar.server') }}
         a.navbar-item(href="#donation")

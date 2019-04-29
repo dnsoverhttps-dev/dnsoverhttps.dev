@@ -1,6 +1,7 @@
 export default {
   navbar: {
-    first: 'First',
+    whatis: 'SecureDNS?',
+    clients: 'Clients',
     server: 'Servers',
     donation: 'Donation'
   },

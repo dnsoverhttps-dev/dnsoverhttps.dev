@@ -1,10 +1,15 @@
 <template lang="pug">
   div
-    section.section.box#first
+    section.section.box#whatis
       .content
-        h1 {{ this.$t('navbar.first') }}
+        h1 {{ this.$t('navbar.whatis') }}
         p It's still under construction!
         p 아직 공사중입니다!
+    section.section.box#clients
+      .content
+        h1 {{ this.$t('navbar.clients') }}
+        p It's still under construction!
+        p 아직 공사중입니다! 
     section.section.box#server
       .content
         h1 {{ this.$t('navbar.server') }}
