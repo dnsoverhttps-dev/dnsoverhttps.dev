@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{108:function(e,n,t){"use strict";t.r(n),n.default={navbar:{whatis:"SecureDNS?",clients:"Clients",server:"Servers",donation:"Donation"},OG:{siteName:"DNSoverHTTPS.dev",desc:"It is Secure DNS!"}}}}]);
