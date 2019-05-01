@@ -1,4 +1,30 @@
+const parseArgs = require('minimist')
+
+const argv = parseArgs(process.argv.slice(2), {
+  alias: {
+    H: "hostname",
+    p: "port"
+  },
+  string: ["H"],
+  unknown: parameter => false
+})
+
+const port =
+  argv.port ||
+  process.env.PORT ||
+  process.env.npm_package_config_nuxt_port ||
+  "3000"
+const host =
+  argv.hostname ||
+  process.env.HOST ||
+  process.env.npm_package_config_nuxt_host ||
+  "localhost"
+
 module.exports = {
+  env: {
+    baseUrl:
+      process.env.BASE_URL || `http://${host}:${port}`
+  },
   /*
   ** Headers of the page
   */
@@ -39,20 +65,22 @@ module.exports = {
     }
   },
   modules: [
-    ['@nuxtjs/google-adsense'],
-    ['@nuxtjs/google-analytics'],
-    ['nuxt-buefy'],
+    '@nuxtjs/google-adsense',
+    '@nuxtjs/google-analytics',
+    'nuxt-buefy',
     'nuxt-rfg-icon',
     ['nuxt-i18n', {
       locales: [
         {
           code: 'ko',
           iso: 'ko-KR',
-          file: 'ko.js'
+          file: 'ko.js',
+          name: '한국어'
         }, {
           code: 'en',
           iso: 'en-US',
-          file: 'en.js'
+          file: 'en.js',
+          name: 'English'
         }],
       defaultLocale: 'ko',
       lazy: true,

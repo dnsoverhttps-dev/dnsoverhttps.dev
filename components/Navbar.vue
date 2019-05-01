@@ -27,6 +27,20 @@
           p {{ this.$t('navbar.server') }}
         a.navbar-item(href="#donation")
           p {{ this.$t('navbar.donation') }}
+        b-dropdown(position="is-bottom-left" aria-role="menu")
+          a.navbar-item(slot="trigger", role="button")
+            span Switch Language
+            b-icon(icon="menu-down")
+          b-dropdown-item(
+            aria-role="menu-item"
+            custom
+            paddingless
+            v-for="locale in availableLocales"
+            :key="locale.code"
+          )
+            nuxt-link.navbar-item(
+              :to="switchLocalePath(locale.code)"
+            ) {{ locale.name }}
 </template>
 
 <style lang="scss">
@@ -43,6 +57,11 @@ export default {
   data () {
     return {
       display: false
+    }
+  },
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     }
   }
 }

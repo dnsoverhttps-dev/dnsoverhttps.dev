@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import cookie from 'vue-cookie'
+
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 
@@ -24,6 +26,15 @@ export default {
   components: {
     Navbar,
     Footer
+  },
+  mounted() {
+    if (process.browser) {
+      if (cookie.get('i18n_redirected') !== '1') {
+        const lang = navigator.language.toLocaleLowerCase().substring(0, 2)
+        cookie.set('i18n_redirected', '1')
+        this.$router.push(this.switchLocalePath(lang))
+      }
+    }
   }
 }
 </script>
