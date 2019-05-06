@@ -75,12 +75,12 @@ module.exports = {
           code: 'ko',
           iso: 'ko-KR',
           file: 'ko.js',
-          name: '한국어'
+          name: '🇰🇷 한국어'
         }, {
           code: 'en',
           iso: 'en-US',
           file: 'en.js',
-          name: 'English'
+          name: '🇺🇸 English'
         }],
       defaultLocale: 'ko',
       lazy: true,

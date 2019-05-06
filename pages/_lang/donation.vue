@@ -1,15 +1,13 @@
 <template lang="pug">
   div
-    section.section.box
+    section.section.box#donation
       .content
-        h1 {{ this.$t('navbar.whatis') }}
-        p It's still under construction!
-        p 아직 공사중입니다!
-    section.section.box
-      .content
-        h1 {{ this.$t('navbar.clients') }}
-        p It's still under construction!
-        p 아직 공사중입니다!
+        h1 {{ this.$t('navbar.donation') }}
+
+        a.button.is-large.patreon.is-focused(
+          href="https://www.patreon.com/dnsoverhttps"
+          target="_blank"
+        ) BECOME A PATRON
 </template>
 
 <script>

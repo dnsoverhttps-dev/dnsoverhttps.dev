@@ -1,15 +1,16 @@
 <template lang="pug">
   div
-    section.section.box
+    section.section.box#server
       .content
-        h1 {{ this.$t('navbar.whatis') }}
-        p It's still under construction!
-        p 아직 공사중입니다!
-    section.section.box
-      .content
-        h1 {{ this.$t('navbar.clients') }}
-        p It's still under construction!
-        p 아직 공사중입니다!
+        h1 {{ this.$t('navbar.server') }}
+        b-tabs(v-model="activeTab")
+          b-tab-item(label="EA ns1")
+            SecureDNS(
+              :domain="'ns1.eastasia.dnsoverhttps.dev'"
+              :ip="'198.13.50.6'"
+              :protocol="'sdns://AgEAAAAAAAAACzE5OC4xMy41MC42AB1uczEuZWFzdGFzaWEuZG5zb3Zlcmh0dHBzLmRldgovZG5zLXF1ZXJ5'"
+            )
+          b-tab-item(label="Comming Soon!" disabled)
 </template>
 
 <script>
